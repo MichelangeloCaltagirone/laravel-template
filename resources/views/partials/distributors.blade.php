@@ -1,4 +1,4 @@
-{{-- blade per sezione distributors --}}
+{{-- blade per sezione distributors dei partials --}}
 
 <section class="distributors">
     {{-- immagine --}}
