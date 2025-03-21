@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FormController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+/*rotta per la HomePage */
+Route::get('/LandingPage', function () {
     return view('pages.home');
 });
+
+/*Rotta per salvare i dati del form in un CSV in public */
+Route::post('/save-form', [FormController::class, 'store'])->name('saveForm');

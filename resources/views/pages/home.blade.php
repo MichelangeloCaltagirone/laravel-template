@@ -5,8 +5,11 @@
 
 @section("main-content")
 
-<h1>
-    Homepage
-</h1>
+    {{-- concatenazione dei file 'partials' --}}
+    @include("partials.focusProduct")
+    @include("partials.mainProduct")
+    @include("partials.distributors")
+    @include("partials.remainder")
 
 @endsection
+
